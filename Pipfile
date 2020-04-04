@@ -1,0 +1,48 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+bandit = "*"
+coverage = "*"
+django-debug-toolbar = "*"
+django-debug-toolbar-request-history = "*"
+django-naomi = "*"
+isort = "*"
+model-mommy = "*"
+pylint = "*"
+pylint-django = "*"
+pylint-celery = "*"
+ptvsd = "*"
+
+[packages]
+django = "*"
+celery = "*"
+django-imagekit = "*"
+django-filter = "*"
+django-model-utils = "*"
+django-js-reverse = "*"
+django-rest-framework = "*"
+djangorestframework-jwt = "*"
+django-import-export = "*"
+python-decouple = "*"
+"psycopg2" = "*"
+django-storages= "*"
+brotlipy = "*"
+django-log-request-id = "*"
+dj-database-url = "*"
+gunicorn = "*"
+whitenoise = "*"
+psutil = "*"
+boto3 = "*"
+ipython = "*"
+raven = "*"
+pillow = "*"
+django-debug-toolbar = "*"
+coverage = "*"
+WeasyPrint = "*"
+pypdf2 = "*"
+
+[requires]
+python_version = "3.7"

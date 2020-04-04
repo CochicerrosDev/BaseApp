@@ -1,11 +1,18 @@
-FROM node:10
+FROM nikolaik/python-nodejs:python3.7-nodejs10
 
-WORKDIR /usr/src/app
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
 
-COPY package*.json ./
+RUN mkdir /code
 
-RUN npm install
+WORKDIR /code
+COPY . /code/
 
-COPY . .
+RUN pip install pipenv
+RUN pipenv --python 3.7
+ADD Pipfile /code/
+RUN pipenv install --dev
+
+RUN npm install --dev
 
 EXPOSE 8080
