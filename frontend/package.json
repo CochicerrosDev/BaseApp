@@ -1,0 +1,92 @@
+{
+  "name": "baseapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --mode development",
+    "test": "jest",
+    "test:generate-output": "jest --json --outputFile=jest-test-results.json",
+    "test-with-coverage": "jest --coverage",
+    "coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CochicerrosDev/BaseApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "setupFiles": [
+      "./src/setupTests.js"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/CochicerrosDev/BaseApp/issues"
+  },
+  "homepage": "https://github.com/CochicerrosDev/BaseApp#readme",
+  "resolutions": {
+    "webpack/acorn": "6.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.3.4",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "acorn": "^6.0.5",
+    "babel-jest": "^24.1.0",
+    "babel-loader": "^8.0.5",
+    "babel-polyfill": "^6.26.0",
+    "connected-react-router": "^6.3.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.9.1",
+    "enzyme-to-json": "^3.3.5",
+    "eslint": "^5.15.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.4.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.1.0",
+    "jwt-simple": "^0.5.6",
+    "moment": "^2.24.0",
+    "node-sass": "^4.11.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-redux": "^6.0.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-mock-store": "^1.5.3",
+    "redux-saga": "^1.0.1",
+    "css-loader": "^2.1.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "svg-url-loader": "^2.3.2",
+    "uuid": "^3.3.2",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-s3-plugin": "^1.0.3"
+  },
+  "dependencies": {
+    "carbon-components": "^9.91.0",
+    "carbon-components-react": "^6.114.0",
+    "carbon-icons": "^7.0.7",
+    "jwt-decode": "^2.2.0",
+    "raven-for-redux": "^1.4.0",
+    "raven-js": "^3.27.0",
+    "react-router-hash-link": "^1.2.1",
+    "react-svg-pan-zoom": "^3.1.0"
+  }
+}

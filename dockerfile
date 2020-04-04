@@ -13,6 +13,4 @@ RUN pipenv --python 3.7
 ADD Pipfile /code/
 RUN pipenv install --dev
 
-RUN npm install --dev
-
-EXPOSE 8080
+EXPOSE 8000
