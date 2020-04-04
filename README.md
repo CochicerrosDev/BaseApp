@@ -8,10 +8,12 @@ _Para comenzar unicamente tenemos un contendor de Docker y express de node._
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+_Ser sexy de corazón y picueto de mente para ser un cochideveloper poco frecuente_
+
+_Abre tu consola interior humana e introduce:_
 
 ```
-Da un ejemplo
+picueto -a heart -xxx 
 ```
 
 ### Instalación 🔧
