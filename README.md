@@ -39,15 +39,26 @@ _No hay test de momento_
 _Tampoco hay_
 
 ## Despliegue 📦
-
 _Nos dirigimos a la carpeta raiz del proyecto y ejecutamos el siguiente comando:_
 
 ```
 docker-compose build
 ```
 
-_Posteriormente, para deplegar usaremos:
+_Ahora mismo, nuestra app se divide en backend y en frontend, aún hay algunos problemas para levantar ambos a la vez._
+_De modo que podremos levantarlos por separado de momento, haremos lo siguiente:_
 
+_Para levantar el backend, en una nueva ventana de la consola, haremos:_
+```
+docker-compose run backend
+```
+
+_Para levantar el backend, en una nueva ventana de la consola, haremos:_
+```
+docker-compose run frontend
+```
+
+_Para levantar ambos (NO FUNCIONAL DE MOMENTO) haremos:_
 ```
 docker-compose up
 ```
