@@ -34,6 +34,12 @@ module.exports = {
         ]
       },
       {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader',
+        ],
+      },
+      {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
       },
@@ -45,10 +51,10 @@ module.exports = {
   },
   devServer: {
     host: '0.0.0.0',
-    port: 8080,
+    port: 3000,
     open: false,
     proxy: {
-      '/': 'http://localhost:8000'
+      '/': 'http://localhost:8080'
     },
     historyApiFallback: true,
     watchOptions: {
